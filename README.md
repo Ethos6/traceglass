@@ -1,6 +1,16 @@
-# Traceglass
+<p align="center">
+  <img src="assets/traceglass-mark.svg" alt="Traceglass logo" width="112">
+</p>
 
-**Evidence-first static inspection for Linux binaries and software archives.** Traceglass combines a small local CLI with a portable agent skill. It records what was observed, where the observation came from, and which claims remain unknown.
+<h1 align="center">Traceglass</h1>
+
+<p align="center">Evidence-first static inspection for Linux binaries and software archives.</p>
+
+<p align="center">
+  <img src="assets/how-it-works.svg" alt="How Traceglass works: classify a file, inspect it locally, and produce a JSON evidence report" width="100%">
+</p>
+
+Traceglass combines a small local CLI with a portable agent skill. It records what was observed, where the observation came from, and which claims remain unknown.
 
 It reads target files and archive metadata. It does not execute binaries, extract archives, make network requests, or require an AI API key.
 
