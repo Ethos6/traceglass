@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">How Traceglass works</title>
+  <desc id="desc">A file is hashed and classified, inspected locally without execution, and returned as a JSON report with evidence and warnings.</desc>
+  <defs>
+    <linearGradient id="canvas" x1="50" y1="25" x2="1110" y2="370" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111d32"/>
+      <stop offset="1" stop-color="#0a1220"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#54dce2"/>
+      <stop offset="1" stop-color="#8690ff"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#020617" flood-opacity=".3"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="390" rx="28" fill="url(#canvas)"/>
+  <text x="56" y="59" fill="#f4f7fb" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">A small, local evidence pipeline</text>
+  <text x="56" y="88" fill="#9eacc0" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">Inputs stay on the machine. The target is read, never executed or extracted.</text>
+  <g filter="url(#soft)">
+    <rect x="54" y="126" width="286" height="166" rx="18" fill="#17263b" stroke="#2b3d55"/>
+    <rect x="457" y="126" width="286" height="166" rx="18" fill="#17263b" stroke="#2b3d55"/>
+    <rect x="860" y="126" width="286" height="166" rx="18" fill="#17263b" stroke="#2b3d55"/>
+  </g>
+  <g fill="none" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M353 208h86m-12-12 12 12-12 12"/>
+    <path d="M756 208h86m-12-12 12 12-12 12"/>
+  </g>
+  <g transform="translate(81 158)">
+    <path d="M10 9h55l20 20v62H10z" fill="#d9e5f2"/>
+    <path d="M65 9v21h20" fill="none" stroke="#8292a8" stroke-width="3"/>
+    <path d="M25 49h43M25 61h43M25 73h30" stroke="#6d8098" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="70" cy="80" r="13" fill="#0f1b2c" stroke="#5fd6dd" stroke-width="4"/>
+    <path d="m79 89 12 12" stroke="#5fd6dd" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="193" y="177" fill="#f4f7fb" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">1 · Choose a file</text>
+  <text x="193" y="204" fill="#b9c5d5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13">ELF · ZIP/APK · SQLite</text>
+  <text x="193" y="226" fill="#b9c5d5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13">WASM · gzip · other</text>
+  <text x="193" y="264" fill="#83e6e7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="600">SHA-256 + file type</text>
+  <g transform="translate(485 159)">
+    <rect x="4" y="9" width="82" height="72" rx="10" fill="#102036" stroke="#53657e" stroke-width="2"/>
+    <path d="M17 27h56M17 41h40M17 55h48" stroke="#aebdd0" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="21" cy="69" r="4" fill="#5fd6dd"/>
+    <path d="M35 69h29" stroke="#647891" stroke-width="4" stroke-linecap="round"/>
+    <path d="M53 2v14M43 2h20" stroke="#8797b0" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="589" y="177" fill="#f4f7fb" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">2 · Inspect locally</text>
+  <text x="589" y="204" fill="#b9c5d5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13">Read headers, symbols, strings</text>
+  <text x="589" y="226" fill="#b9c5d5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13">and archive metadata</text>
+  <text x="589" y="264" fill="#83e6e7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="600">No network · no execution</text>
+  <g transform="translate(887 157)">
+    <path d="M8 10h73v91H8z" fill="#d9e5f2" rx="8"/>
+    <path d="M21 29h47M21 42h47M21 55h35" stroke="#71839a" stroke-width="4" stroke-linecap="round"/>
+    <path d="m22 76 8 8 15-17" fill="none" stroke="#31a8a6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M55 78h16" stroke="#8c99ff" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="989" y="177" fill="#f4f7fb" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">3 · Review evidence</text>
+  <text x="989" y="204" fill="#b9c5d5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13">JSON with source labels,</text>
+  <text x="989" y="226" fill="#b9c5d5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13">warnings and known limits</text>
+  <text x="989" y="264" fill="#83e6e7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="600">Observed ≠ inferred</text>
+  <text x="56" y="343" fill="#8595aa" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">Static inspection is a lead for investigation, not proof of runtime behavior.</text>
+</svg>
