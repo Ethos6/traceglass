@@ -9,7 +9,7 @@ description = "Evidence-first static inspection for Linux binaries and archives"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Atomesus Research Labs" }]
+authors = [{ name = "Ethos 6" }]
 
 [project.scripts]
 traceglass = "traceglass:main"
